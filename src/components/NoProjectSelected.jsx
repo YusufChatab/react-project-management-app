@@ -1,6 +1,6 @@
 import ButtonCreate from "./ButtonCreate";
 
-export default function NoProjectSelected() {
+export default function NoProjectSelected({ onStartAddProject }) {
   return (
     <div className="mt-24 text-center w-2/3">
       <img
@@ -15,7 +15,9 @@ export default function NoProjectSelected() {
         Select a project or Create a new one
       </p>
       <p className="mt-8">
-        <ButtonCreate>Create New Project</ButtonCreate>
+        <ButtonCreate onClick={onStartAddProject}>
+          Create New Project
+        </ButtonCreate>
       </p>
     </div>
   );
