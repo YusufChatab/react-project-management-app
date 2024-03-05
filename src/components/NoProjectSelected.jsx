@@ -1,11 +1,12 @@
 import ButtonCreate from "./ButtonCreate";
+import imageFile from "../assets/Nijika-taking-notes.png";
 
 export default function NoProjectSelected({ onStartAddProject }) {
   return (
     <div className="mt-24 text-center w-2/3">
       <img
-        className="w-16 h-16 object-contain mx-auto"
-        src="../assets/no-project.png"
+        className="w-48 h-48 object-contain mx-auto"
+        src={imageFile}
         alt=""
       />
       <h2 className="text-xl font-bold text-stone-500 my-4">
